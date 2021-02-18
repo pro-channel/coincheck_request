@@ -9,19 +9,19 @@ coincheckのAPIへのリクエスト処理を行うプログラムです。
 
 
 ## 設定
-「プロジェクト右クリック」→「設定」でAccessKey,SecretKeyを設定してください。
-coincheckのプライベートAPIを実行する場合この2つが設定されていないと実行できません。
-app.configを直接編集でもOKです。
-この二つのキーは↓で取得できます。
+「プロジェクト右クリック」→「設定」でAccessKey,SecretKeyを設定してください。  
+coincheckのプライベートAPIを実行する場合この2つが設定されていないと実行できません。  
+app.configを直接編集でもOKです。  
+この二つのキーは↓で取得できます。  
 <https://coincheck.com/ja/api_settings>
 
 
 
 ## 依存関係
-このプログラムではAPIリクエストのJSON操作にNewtonsoft.jsonを使用しています。
-tickerの取得等の処理でNewtonsoft.jsonのオブジェクトが戻り値に設定されています。
-呼び出しするプロジェクトではNewtonsoft.jsonの参照追加が必要です。
-Nugetでインストールできます。
+このプログラムではAPIリクエストのJSON操作にNewtonsoft.jsonを使用しています。  
+tickerの取得等の処理でNewtonsoft.jsonのオブジェクトが戻り値に設定されています。  
+呼び出しするプロジェクトではNewtonsoft.jsonの参照追加が必要です。  
+Nugetでインストールできます。  
 
 ## 注意事項
 coincheckの仕様変更が発生した場合、正常動作しない可能性があります。
@@ -45,12 +45,12 @@ BTCの残高を取得します。
 売り注文リクエストを行います。レートを注文量を指定してください。
 
 ### GetBoardJson
-板情報を取得します。戻り値のJObjectはAPIのJSON構造のままです。
+板情報を取得します。戻り値のJObjectはAPIのJSON構造のままです。  
 ↓に板情報のJSON使用があります。
 <https://coincheck.com/ja/documents/exchange/api#order-book>
 
 ### GetTickerJson
-ティッカー情報を取得します。戻り値のJObjectはAPIのJSON構造のままです。
+ティッカー情報を取得します。戻り値のJObjectはAPIのJSON構造のままです。  
 ↓に板情報のJSON使用があります。
 <https://coincheck.com/ja/documents/exchange/api#ticker>
 
